@@ -1,0 +1,687 @@
+													                                                                                🚀️BASIC UNIX COMMANDS
+													
+	👉️UNIX USERS COMMANDS
+	
+		These commands allow you to get basic information about Unix users in your environment.
+		
+		whoami – show your username
+		
+		id – print user identity
+		
+		groups – show which groups user belongs to
+		
+		passwd – change user password
+		
+		who – find out who is logged into the system
+		
+		last – show history of logins into the system
+
+
+		
+	👉️UNIX FILE OPERATIONS
+	
+		Navigating filesystem and managing files and access permissions:
+		
+		nslookup google.com – server address
+		
+		cp – copy files (work in progress)
+		
+		rm – remove files and directories (work in progress)
+		
+		mv – rename or move files and directories to another location
+		
+		echo – “hello world”
+		
+		chown – change file/directory ownership
+
+
+						
+	👉️UNIX DIRECTORY MANAGEMENT COMMANDS
+	
+		Navigating filesystems and managing directories:
+		
+		cd – change directory
+		
+		pwd – confirm current directory
+		
+		mkdir – make new directory
+		
+		rmdir – remove directories in Unix
+                                                                                                          
+		
+	☘️CONTROL COMMANDS:
+	
+		💻️1)=>Command ps - displays a snapshot of all current processes
+		
+		Common Syntax		$ ps [options]
+		Example 			$ ps -ef
+		Show every process running, formatted as a table	
+		
+		
+		
+		💻️2)=>Command top - displays a live status of current processes
+		
+		Common Syntax		$ top [options]
+		Example			$ top
+		Show a live view of all current processes
+		
+		
+		
+		💻️3)=>Command bg - resume a background suspended a job
+		
+		Common Syntax		$ bg [job_spec …]
+		Example			$ xterm
+						Ctrl-Z
+						$ bg
+		Continue running a job that was previously suspended (using Ctrl-Z) in the background
+		
+		
+		
+		💻️4)=>Command clear – clear a terminal screen
+		
+		Common Syntax$ clear
+		Example        		$ clear
+		Clear all prior text from the terminal screen
+		
+		
+		
+		💻️5)=>Command history – print history of commands in the current session
+		
+		Common Syntax		$ history [options]
+		Example			$ history
+			
+			
+	📑️BASIC ONES'		
+			
+			
+		🖥️#1) touch: Create a new file or update its timestamp.
+		
+			•Syntax: touch [OPTION]…[FILE]
+			•Example: Create empty files called ‘file1’ and ‘file2’
+			•$ touch file1 file2
+		
+		
+		🖥️#2) cat: Concatenate files and print to stdout.
+		
+			•Syntax: cat [OPTION]…[FILE]
+			•Example: Create file1 with entered cotent
+			•$ cat > file1
+			•Hello
+		
+		
+		🖥️#3) cp: Copy files
+		
+			•Syntax: cp [OPTION]source destination
+			•Example: Copies the contents from file1 to file2 and the contents of file1 are retained
+			•$ cp file1 file2
+		
+		🖥️#4) mv: Move files or rename files
+		
+			•Syntax: mv [OPTION]source destination
+			•Example: Create empty files called ‘file1’ and ‘file2’
+			•$ mv file1 file2
+		
+		
+		🖥️#5) rm: Remove files and directories
+		
+			•Syntax: rm [OPTION]…[FILE]
+			•Example: Delete file1
+			$ rm file1
+		
+		
+		🖥️#6) mkdir: Make a directory
+		
+			•Syntax: mkdir [OPTION] directory
+			•Example: Create a directory called dir1
+			•$ mkdir dir1
+			
+			
+		🖥️#7) rmdir: Remove a directory
+		
+			•Syntax: rmdir [OPTION] directory
+			•Example: Create empty files called ‘file1’ and ‘file2’
+			•$ rmdir dir1
+			
+			
+		🖥️#8) cd: Change directory
+		
+			•Syntax: cd [OPTION] directory
+			•Example: Change working directory to dir1
+			•$ cd dir1
+			
+			
+		🖥️#9) pwd: Print the present working directory
+		
+			•Syntax: pwd [OPTION]
+			•Example: Print ‘dir1’ if a current working directory is dir1
+			
+			
+		🖥️#10) ls: List directory contents
+		
+			•Syntax: ls [OPTION] [FILE]
+			•Example: list all (including hidden files) directory contents, in long format, sorted by
+			•$ ls -alt
+			•
+			•
+			•
+			$ls -l
+			$ls -ltr
+			$ls -a
+			
+			
+		🖥️#11) which: Locate a command
+		
+			•Syntax: which [-a] filename
+			•Example: List all paths from where ‘cat’ can run
+			•$ which -a cat
+			
+			
+		🖥️#12) man: Interface for working with the online reference manuals.
+		
+			•Syntax: man [-s section] item
+			•Example: Show the manual page for the ‘cat’ command
+			•$ man cat
+			
+			
+		🖥️#13) su: Change user-id or become super-user.
+		
+			•Syntax: su [options] [username]
+			•Example: Change user-id to ‘user1’ (if it exists)
+			•$ su user1
+			
+			
+		🖥️#14) sudo: Execute a command as some other user or super-user
+		
+			•Syntax: sudo [options] [command]
+			•Example: Get a file listing of an unlisted directory
+			•$ sudo ls /usr/local/protected
+			
+			
+		🖥️#15) find: Used to search for files and directories as mentioned in the ‘expression’
+		
+			•Syntax: find [starting-point] [expression]
+			•Example: In ‘/usr’ folder, find character device files, of the name ‘backup’
+			•$ find /usr -type c -name backup
+			
+			
+		🖥️#16) du: Estimate disk usage is blocks
+		
+			•Syntax: du [options] [file]
+			•Example: Show the number of blocks occupied by files in the current directory
+			•$ du
+		
+		
+		🖥️#17) df: Show the number of free blocks for the mounted file system
+		
+			•Syntax: df [options] [file]
+			•Example: Show the number of free blocks in local file systems
+			•$ df -l
+			
+		
+		🖥️#18) cal: Displays the calendar.
+		
+			•Syntax: cal [[month] year]
+			•Example: display the calendar for April 2018
+			•$ cal 4 2018
+		
+		
+		🖥️#19) date: Displays the system date and time.
+		
+			•Syntax: date [+format]
+			•Example: Display the date in dd/mm/yy format
+			•$ date +%d/%m/%y
+			
+			
+		🖥️#20) who: Displays the list of users currently logged in
+		
+			Syntax: who [option] … [file][arg1]
+			6|Page•Example: List all currently logged-in users
+			•$ who
+			
+			
+		🖥️#21) whoami: Displays the user id of the currently logged-in user.
+		
+			•Syntax: whoami [option]
+			•Example: List currently logged-in user
+			•$ whoami
+			
+	
+	📑️SOME MORE IMPORTANT COMMANDS
+	
+			🔖️Grep command in Unix:
+	
+			     The grep command in Unix/Linux is a powerful tool used for searching and manipulating text patterns within files.
+			     In this article, we will explore the various aspects of the grep command.
+			     
+				-c: This prints only a count of the lines that match a pattern
+				-h: Display the matched lines, but do not display the filenames.
+				-l: Displays list of a filenames only.
+				-n: Display the matched lines and their line numbers.
+				-v: This prints out all the lines that do not matches the pattern
+				-e : Specifies expression with this option. Can use multiple times.
+				-o :Print only the matched parts of a matching line, with each such part on a separate output line.
+			     
+			     Example:	grep -o "unix" geekfile.txt
+			     			grep "^unix" geekfile.txt
+			     			grep -v "unix" geekfile.txt
+			     			
+			     			
+			 🔖️Sed Command in Unix:
+			 
+			      SED is a powerful text stream editor. Can do insertion, deletion,search and replace(substitution).
+			      
+			      Example:       Consider the below text file as an input.
+					         $cat > geekfile.txt
+			     
+			     Replacing or substituting string : Sed command is mostly used to replace the text in a file.
+			     
+			     $sed 's/unix/linux/' geekfile.txt
+			     
+			     
+			🔖️Sort Command:
+			
+			      In Unix-based operating systems, the sort command is used to sort the lines of a text file or input stream.
+			     
+			     Syntax : sort file.txt
+			     
+			     	-o: Specifies an output file for the sorted data.Functionally equivalent to redirecting output to a file.
+				-r: Sorts data in reverse order (descending).
+				-n: Sorts a file numerically (interprets data as numbers).
+				-nr: Sorts a file with numeric data in reverse order.Combines -n and -r options.
+				-k: Sorts a table based on a specific column number.
+				-c: Checks if the file is already sorted and reports any disorder.
+			     	-u: Sorts and removes duplicate lines, providing a unique sorted list.
+				-M: Sorts by month names.
+			     
+			🔖️chmod Command:
+			
+			      In Unix operating systems, the chmod command is used to change the access mode of a file.
+			     
+			     Operators			Definition:
+				
+				`+`				Add permissions
+				`-`				Remove permissions
+				`=`				Set the permissions to the specified values
+			     
+			🔖️AWK command in Unix:
+			
+			    Awk is a powerful text processing tool available in Unix and Unix-like operating systems. It is particularly useful for processing structured text files.
+			     
+			    Example:	Consider the following text file as the input file for all cases below:
+						$cat > employee.txt
+						ajay manager account 45000
+						sunil clerk account 25000
+						varun manager sales 50000
+			     
+			     			Print the lines which match the given pattern.
+			     
+						$ awk '/manager/ {print}' employee.txt
+			     
+			     
+			🔖️shutdown command:
+			
+			    The shutdown command in Linux is used to shutdown the system in a safe way.
+			     
+			    Syntax : shutdown [options] [time] [message]
+			    
+				         shutdown -r +5 reboot
+				         
+				        options – Shutdown options such as halt, power-off (the default option) or reboot the system.
+				        time – The time argument specifies when to perform the shutdown process.
+				        message – The message argument specifies a message which will be broadcast to all users.
+			     
+			     
+			     
+			
+												          🏁️END OF THE FILE🏁️
+												                
+												    	THANK'S FOR READING😇️													   🚀️BASIC UNIX COMMANDS
+													
+	👉️UNIX USERS COMMANDS
+	
+		These commands allow you to get basic information about Unix users in your environment.
+		
+		whoami – show your username
+		
+		id – print user identity
+		
+		groups – show which groups user belongs to
+		
+		passwd – change user password
+		
+		who – find out who is logged into the system
+		
+		last – show history of logins into the system
+		
+	👉️UNIX FILE OPERATIONS
+	
+		Navigating filesystem and managing files and access permissions:
+		
+		nslookup google.com – server address
+		
+		cp – copy files (work in progress)
+		
+		rm – remove files and directories (work in progress)
+		
+		mv – rename or move files and directories to another location
+		
+		echo – “hello world”
+		
+		chown – change file/directory ownership
+						
+	👉️UNIX DIRECTORY MANAGEMENT COMMANDS
+	
+		Navigating filesystems and managing directories:
+		
+		cd – change directory
+		
+		pwd – confirm current directory
+		
+		mkdir – make new directory
+		
+		rmdir – remove directories in Unix
+		
+	☘️CONTROL COMMANDS:
+	
+		💻️1)=>Command ps - displays a snapshot of all current processes
+		
+		Common Syntax		$ ps [options]
+		Example 			$ ps -ef
+		Show every process running, formatted as a table	
+		
+		
+		
+		💻️2)=>Command top - displays a live status of current processes
+		
+		Common Syntax		$ top [options]
+		Example			$ top
+		Show a live view of all current processes
+		
+		
+		
+		💻️3)=>Command bg - resume a background suspended a job
+		
+		Common Syntax		$ bg [job_spec …]
+		Example			$ xterm
+						Ctrl-Z
+						$ bg
+		Continue running a job that was previously suspended (using Ctrl-Z) in the background
+		
+		
+		
+		💻️4)=>Command clear – clear a terminal screen
+		
+		Common Syntax$ clear
+		Example        		$ clear
+		Clear all prior text from the terminal screen
+		
+		
+		
+		💻️5)=>Command history – print history of commands in the current session
+		
+		Common Syntax		$ history [options]
+		Example			$ history
+			
+			
+	📑️BASIC ONES'		
+			
+			
+		🖥️#1) touch: Create a new file or update its timestamp.
+		
+			•Syntax: touch [OPTION]…[FILE]
+			•Example: Create empty files called ‘file1’ and ‘file2’
+			•$ touch file1 file2
+		
+		
+		🖥️#2) cat: Concatenate files and print to stdout.
+		
+			•Syntax: cat [OPTION]…[FILE]
+			•Example: Create file1 with entered cotent
+			•$ cat > file1
+			•Hello
+		
+		
+		🖥️#3) cp: Copy files
+		
+			•Syntax: cp [OPTION]source destination
+			•Example: Copies the contents from file1 to file2 and the contents of file1 are retained
+			•$ cp file1 file2
+		
+		🖥️#4) mv: Move files or rename files
+		
+			•Syntax: mv [OPTION]source destination
+			•Example: Create empty files called ‘file1’ and ‘file2’
+			•$ mv file1 file2
+		
+		
+		🖥️#5) rm: Remove files and directories
+		
+			•Syntax: rm [OPTION]…[FILE]
+			•Example: Delete file1
+			$ rm file1
+		
+		
+		🖥️#6) mkdir: Make a directory
+		
+			•Syntax: mkdir [OPTION] directory
+			•Example: Create a directory called dir1
+			•$ mkdir dir1
+			
+			
+		🖥️#7) rmdir: Remove a directory
+		
+			•Syntax: rmdir [OPTION] directory
+			•Example: Create empty files called ‘file1’ and ‘file2’
+			•$ rmdir dir1
+			
+			
+		🖥️#8) cd: Change directory
+		
+			•Syntax: cd [OPTION] directory
+			•Example: Change working directory to dir1
+			•$ cd dir1
+			
+			
+		🖥️#9) pwd: Print the present working directory
+		
+			•Syntax: pwd [OPTION]
+			•Example: Print ‘dir1’ if a current working directory is dir1
+			
+			
+		🖥️#10) ls: List directory contents
+		
+			•Syntax: ls [OPTION] [FILE]
+			•Example: list all (including hidden files) directory contents, in long format, sorted by
+			•$ ls -alt
+			•
+			•
+			•
+			$ls -l
+			$ls -ltr
+			$ls -a
+			
+			
+		🖥️#11) which: Locate a command
+		
+			•Syntax: which [-a] filename
+			•Example: List all paths from where ‘cat’ can run
+			•$ which -a cat
+			
+			
+		🖥️#12) man: Interface for working with the online reference manuals.
+		
+			•Syntax: man [-s section] item
+			•Example: Show the manual page for the ‘cat’ command
+			•$ man cat
+			
+			
+		🖥️#13) su: Change user-id or become super-user.
+		
+			•Syntax: su [options] [username]
+			•Example: Change user-id to ‘user1’ (if it exists)
+			•$ su user1
+			
+			
+		🖥️#14) sudo: Execute a command as some other user or super-user
+		
+			•Syntax: sudo [options] [command]
+			•Example: Get a file listing of an unlisted directory
+			•$ sudo ls /usr/local/protected
+			
+			
+		🖥️#15) find: Used to search for files and directories as mentioned in the ‘expression’
+		
+			•Syntax: find [starting-point] [expression]
+			•Example: In ‘/usr’ folder, find character device files, of the name ‘backup’
+			•$ find /usr -type c -name backup
+			
+			
+		🖥️#16) du: Estimate disk usage is blocks
+		
+			•Syntax: du [options] [file]
+			•Example: Show the number of blocks occupied by files in the current directory
+			•$ du
+		
+		
+		🖥️#17) df: Show the number of free blocks for the mounted file system
+		
+			•Syntax: df [options] [file]
+			•Example: Show the number of free blocks in local file systems
+			•$ df -l
+			
+		
+		🖥️#18) cal: Displays the calendar.
+		
+			•Syntax: cal [[month] year]
+			•Example: display the calendar for April 2018
+			•$ cal 4 2018
+		
+		
+		🖥️#19) date: Displays the system date and time.
+		
+			•Syntax: date [+format]
+			•Example: Display the date in dd/mm/yy format
+			•$ date +%d/%m/%y
+			
+			
+		🖥️#20) who: Displays the list of users currently logged in
+		
+			Syntax: who [option] … [file][arg1]
+			6|Page•Example: List all currently logged-in users
+			•$ who
+			
+			
+		🖥️#21) whoami: Displays the user id of the currently logged-in user.
+		
+			•Syntax: whoami [option]
+			•Example: List currently logged-in user
+			•$ whoami
+			
+	
+	📑️SOME MORE IMPORTANT COMMANDS
+	
+			🔖️Grep command in Unix:
+	
+			     The grep command in Unix/Linux is a powerful tool used for searching and manipulating text patterns within files.
+			     In this article, we will explore the various aspects of the grep command.
+			     
+				-c: This prints only a count of the lines that match a pattern
+				-h: Display the matched lines, but do not display the filenames.
+				-l: Displays list of a filenames only.
+				-n: Display the matched lines and their line numbers.
+				-v: This prints out all the lines that do not matches the pattern
+				-e : Specifies expression with this option. Can use multiple times.
+				-o :Print only the matched parts of a matching line, with each such part on a separate output line.
+			     
+			     Example:	grep -o "unix" geekfile.txt
+			     			grep "^unix" geekfile.txt
+			     			grep -v "unix" geekfile.txt
+			     			
+			     			
+			 🔖️Sed Command in Unix:
+			 
+			      SED is a powerful text stream editor. Can do insertion, deletion,search and replace(substitution).
+			      
+			      Example:       Consider the below text file as an input.
+					         $cat > geekfile.txt
+			     
+			     Replacing or substituting string : Sed command is mostly used to replace the text in a file.
+			     
+			     $sed 's/unix/linux/' geekfile.txt
+			     
+			     
+			🔖️Sort Command:
+			
+			      In Unix-based operating systems, the sort command is used to sort the lines of a text file or input stream.
+			     
+			     Syntax : sort file.txt
+			     
+			     	-o: Specifies an output file for the sorted data.Functionally equivalent to redirecting output to a file.
+				-r: Sorts data in reverse order (descending).
+				-n: Sorts a file numerically (interprets data as numbers).
+				-nr: Sorts a file with numeric data in reverse order.Combines -n and -r options.
+				-k: Sorts a table based on a specific column number.
+				-c: Checks if the file is already sorted and reports any disorder.
+			     	-u: Sorts and removes duplicate lines, providing a unique sorted list.
+				-M: Sorts by month names.
+			     
+			🔖️chmod Command:
+			
+			      In Unix operating systems, the chmod command is used to change the access mode of a file.
+			     
+			     Operators			Definition:
+				
+				`+`				Add permissions
+				`-`				Remove permissions
+				`=`				Set the permissions to the specified values
+			     
+			🔖️AWK command in Unix:
+			
+			    Awk is a powerful text processing tool available in Unix and Unix-like operating systems. It is particularly useful for processing structured text files.
+			     
+			    Example:	Consider the following text file as the input file for all cases below:
+						$cat > employee.txt
+						ajay manager account 45000
+						sunil clerk account 25000
+						varun manager sales 50000
+			     
+			     			Print the lines which match the given pattern.
+			     
+						$ awk '/manager/ {print}' employee.txt
+			     
+			     
+			🔖️shutdown command:
+			
+			    The shutdown command in Linux is used to shutdown the system in a safe way.
+			     
+			    Syntax : shutdown [options] [time] [message]
+			    
+				         shutdown -r +5 reboot
+				         
+				        options – Shutdown options such as halt, power-off (the default option) or reboot the system.
+				        time – The time argument specifies when to perform the shutdown process.
+				        message – The message argument specifies a message which will be broadcast to all users.
+			     
+			     
+			     
+			
+												                                                                                  🏁️END OF THE FILE🏁️
+												                
+												                                                                                	THANK'S FOR READING😇️													   
+			
+			
+		
+		
+		
+		
+		
+		
+			
+			
+		
+			
+
+				
+			
+			     
+			     
