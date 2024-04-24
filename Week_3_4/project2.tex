@@ -1,0 +1,130 @@
+\documentclass{article}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\title{THE 18.821 MATHEMATICS PROJECT LAB REPORT[REPLACE THIS WITH YOUR OWN SHORT DESCRIPTIVE TITLE!]}
+\author{X. BURPS, P. GURPS}
+\begin{document}
+	\maketitle
+	\abstractname .This is a LATEX template for 18.821, which you can use  for your own reports.
+	\vspace{0.001cm}
+	\centering
+	\section{\small INTRODUCTION}
+	\vspace{0.001cm}
+	This brief document shows some examples of the use of LATEX and
+	indicates some special features of the Math Lab report style. The
+	\textcolor{blue}{course website} contains links to several LATEX manuals.\\
+	End the introduction by describing the contents of the paper sec­
+	tion by section, and which team member(s) wrote each of them. For
+	instance, Section \textcolor{blue}{6} discusses referencing, and is written by P. Gurps.
+	\vspace{0.001cm}
+	\centering
+	\section{\small LATEX EXAMPLES}
+	\vspace{0.001cm}
+	Here are some ways of producing mathematical symbols. Some are
+	package which pre-deﬁned either in LATEX or in the AMS$\sum_{i=1}^{n}$1=n,$\int_{0}^{n}$xdx=$\frac{n^2}{2}$
+	We’ve deﬁned a few other symbols at the start of the document, for
+	instance  .You can make marginal notes for yourself or your
+	co-authors like this:\hspace{10cm}
+	Unﬁnished here?
+	If you want to typeset equations, there are many choices, with or
+	without numbering:
+	\begin{equation}
+		\int_{0}^{1}xdx=1/2
+	\end{equation}
+or
+	\begin{equation}
+		\sum_{i=1}^{0}
+	\end{equation}
+or
+	\begin{equation}
+		1 - 1 + 1 - ...= \frac{1}{2}
+	\end{equation}
+	$\overline{Date: April}$18 2024
+	\vspace{0.1cm}
+	\vskip 0.01mm
+	X. BURPS, P. GURPS
+\begin{figure}[htbp]
+	\centering
+	\includegraphics[width=0.5\textwidth]{/home/user/Downloads/image1.jpeg}
+	\caption{My first .pdf figure}\label{FIGURE:1}
+\end{figure}\\
+	If you want a number for an equation, do it like this:
+	\begin{equation}
+		\lim_{n->1}\sum_{k=1}^{n}\frac{1}{k^2}=\frac{\pi}{6}
+	\end{equation}
+	This can then be referred to as (\textcolor{blue}{1}), which is much easier than keeping
+	track of numbers by hand. To group several equations, aligning on the
+	= sign, do it like this:\\
+	\begin{equation}
+		x1 + 2x2 + 3x3= 7\\
+		y = mx + c\\
+		= 4x − 9.
+	\end{equation}
+You can easily embed hyperlinks into the output .pdf document:
+\textcolor{blue}{click} here for example.
+	\centering
+	\section{\small IMAGES}
+	Figure \textcolor{blue}{1} is an example of a .pdf image put into a ﬂoating environ­
+	ment, which means LaTeX will draw it wherever there’s enough space
+	left in your manuscript. Look at the .tex original to see how to insert
+	a ﬁgure like this.
+	\section{\small THEOREMS AND SUCH}
+	An example of a “conjecture environment” is given below, in Con­
+	jecture \textcolor{blue}{4.1}.Theorems, lemmas, propositions, deﬁnitions, and such all
+	use the same command with the appropriate name changed. In fact,
+	\centering\\
+	THE 18.821 REPORT\\
+	\vspace{0.5cm}
+	if you look at the top of this .tex ﬁle, you can see where we’ve deﬁned
+	these environments.
+	\subsection{Conjecture} \textit{(Vaught’s Conjecture). Let T be a countable com­
+		plete theory. If T has fewer than 2ℵ0 many countable models (up to
+		isomorphism), then it has countably many countable models.}
+	\subsection{Theorem}When it rains it pours.\\
+	Proof. Well, yes.
+	\section{\small FILE TYPES USED BY LATEX}
+	You will write your text as a .tex ﬁle using any text editor (though
+	WYSIWYG editors are troublesome). Traditionally one then runs
+	LATEX and obtains a .dvi ﬁle, which can be viewed on the screen using a
+	dvi viewer. To include images, and then prepare the ﬁle for printing or
+	submission, one typically translates the .dvi into either .ps (Postscript)
+	or .pdf (Adobe PDF).\\
+	Your report will be submitted as a .pdf document.\texttt{pdf latex} command produces a .pdf ﬁle directly from a .tex ﬁle. This command
+	works well with included .pdf ﬁles, but does not handle .eps ﬁles.
+	An .eps ﬁle can be converted to a .pdf ﬁle by viewing it and saving
+	as a .pdf ﬁle, or by\texttt{ps2pdf filename.eps,}which produces \texttt{filename.pdf.}Under MikTeX with WinEdt, all necessary commands
+	will appear under “Accessories” in the WinEdt menu.\\
+	Finally, Matlab can be made to produce .eps ﬁles by typing\\
+	\texttt{print -deps filename} at the prompt.
+	\section{\small QUOTING SOURCES}
+	In your work, keep notes of the literature you’ve used, including
+	websites. Cite the references you use; failure to do so constitutes pla­giarism. Every bibliography item should be referenced somewhere in
+	the paper. Quote as precisely as possible: [\textcolor{blue}{1} pages 76–78] rather than
+	[\textcolor{blue}{1}]. [\textcolor{blue}{2}] was a useful background reference, too.
+	\centering
+	\cite{Pgurps123hello},
+	\cite{Xburps123hello}
+	\bibliographystyle{plain}
+	\bibliography{ref2.bib}
+	\appendix APPENDIX\\
+	Appendices are useful for putting in code or data.\\
+	\vspace{2mm}
+	MIT OpenCourseWare\\
+	\textcolor{blue}{\underline{http://ocw.mit.edu}}\\
+	\vspace{2cm}
+	\large 18.821 Project Laboratory in Mathematics\\
+	Spring 2013\\
+	\vspace{2cm}
+	For information about citing these materials or our Terms of Use, visit:\textcolor{blue}{\underline{http://ocw.mit.edu/terms.}}
+\end{document}
+
+
+
+
+
+
+
+
+
+
